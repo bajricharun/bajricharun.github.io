@@ -210,3 +210,17 @@ progress{
 #aboutme a{
   color: blue;
 }
+
+@media screen and (max-width: 600px) {
+	.openbtn{
+		font-size: 15px;
+	}
+	#link-to-contact {
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+
+
+}
