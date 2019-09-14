@@ -1,0 +1,212 @@
+body {
+  background-color:#111;
+}
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.avatar {
+  vertical-align: middle;
+  width: 35%;
+  height: 35%;
+  border-radius: 50%;
+}
+#names p{
+  padding-bottom: 5px;
+}
+ .pic {
+   margin-left: 0;
+   vertical-align: middle;
+   width: 45%;
+   height: 45%;
+   margin-right: 50%;
+ }
+#content{
+    margin-top: 12.5%;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+#content a:hover{
+  background-color: #444;
+}
+a {
+  text-decoration: none;
+}
+.sidebar a {
+  font-family: "Courier New", Courier, monospace;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 40px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 40px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  position: fixed;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 60px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+.slidebtn {
+  background-color: white;
+  border-radius: 50%;
+  font-size: 40px;
+  color: black;
+  font-family:  "Courier New", Courier, monospace;
+}
+.left {
+  float: left;
+}
+.right {
+  position: absolute;
+  right: 0;
+}
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #202224;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 }
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom {
+  from{ bottom:-100px; opacity:0 }
+  to{ bottom:0; opacity:1 }
+}
+
+#body {
+  width: 100%;
+  display: none;
+}
+#portfolio {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  color: white;
+  font-family:  "Courier New", Courier, monospace;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 10%;
+}
+#portfolio .avatar{
+  margin-left: 70%;
+}
+progress{
+  width: 30%;
+  height: 30px;
+  background-color: white;
+  margin-left: 5%;
+  margin-top: 1.25%;
+}
+#names{
+  float: left;
+}
+#prog{
+  margin-bottom: 15%;
+}
+#link-to-contact {
+  width: 35%;
+  float: right;
+  margin-right: 10%;
+  margin-left: 5%;
+  margin-top: -30%;
+}
+#contact {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  color: white;
+  font-family:  "Courier New", Courier, monospace;
+  font-size: 20px;
+  margin-top: 70%;
+}
+#projects {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  color: white;
+  font-family:  "Courier New", Courier, monospace;
+  font-size: 20px;
+  margin-bottom: 40%;
+  margin-top:40%;
+}
+#aboutme {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  color: white;
+  font-family:  "Courier New", Courier, monospace;
+  font-size: 20px;
+  margin-bottom: 40%;
+  margin-top: 25%;
+}
+#aboutme a{
+  color: blue;
+}

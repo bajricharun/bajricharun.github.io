@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel='stylesheet' type = 'text/css' href = './style.css'/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset='utf-8'>
+  <title>Portfolio | Harun Bajric</title>
+  <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "100% ";
+      document.getElementById("main").style.marginLeft = "250px";
+      }
+
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+      }
+  </script>
+  <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length} ;
+      for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+      }
+      x[slideIndex-1].style.display = "block";
+    }
+  </script>
+  <script>
+    var myVar;
+
+    function myFunction() {
+      myVar = setTimeout(showPage, 1000);
+    }
+
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("portfolio").style.display = "block";
+      document.getElementById("main").style.display = "block";
+      document.getElementById("contact").style.display = "block";
+      document.getElementById("projects").style.display = "block";
+      document.getElementById("aboutme").style.display = "block";
+    }
+  </script>
+</head>
+<body onload="myFunction()" style="margin:0;">
+  <div id="loader"></div>
+  <div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <div id="content">
+    <a href="#portfolio" onclick="closeNav()" >portfolio</a>
+    <a href="#aboutme" onclick="closeNav()">about me</a>
+    <a href="#projects" onclick="closeNav()">projects</a>
+    <a href="#contact" onclick="closeNav()">contact</a>
+  </div>
+</div>
+
+<div style="display:none;" id="main" class='animate-bottom'>
+  <button class="openbtn" onclick="openNav()">☰</button>
+</div>
+  <div style="display:none;" id="portfolio" class="animate-bottom mySlides">
+    <h2 style='text-align: center;'>Portfolio</h2>
+    <p>I design and code minimalistic web pages and simple apps.</p>
+    <img src='tr.png' alt='Avatar' class='avatar'>
+  </div>
+  <div style="display:none;" id="aboutme" class="animate-bottom mySlides">
+    <h2 style='text-align: center;'>About Me</h2>
+    <p>Hello, I am Harun, a 17 year old from Bosnia. I make simple apps and websites using several langauges.
+      I'm proficient in C/C++, PHP and Laravel, HTML, CSS, Sass, Javascript, React and Python(Tkinter and PyQt5 modules).
+    </p>
+      <div id='progress'>
+          <h3> Proficiency per language </h3>
+        <div id='names'>
+        <p> Python</p>
+        <p> Javascript</p>
+        <p>HTML</p>
+        <p>CSS</p>
+        <p>Sass</p>
+	<p>C and C++</p>
+	<p>PHP</p>
+	</div>
+        <div id='prog'>
+          <progress max='100' value='75'></progress>
+          <br>
+          <progress max='100' value='50'></progress>
+          <br>
+          <progress max='100' value='100'></progress>
+          <br>
+          <progress max='100' value='100'></progress>
+          <br>
+          <progress max='100' value='100'></progress>
+      	  <br>
+	  <progress max='100' value='40'></progress>
+	  <br>
+	  <progress max='100' value='50'></progress>
+	</div>
+      </div>
+      <div id='link-to-contact'>
+        <p> If you are interested in collaboration check the <a href='#contact'>contact</a> section.</p>
+      </div>
+  <div style="display:none;" id="projects" class="animate-bottom mySlides">
+    <h2 style='text-align: center;'>Previous Projects</h2>
+    <p>
+	My previous projects include my personal website, and a couple of software.   	   Currently only one project is available on my github, and my website.
+	<br><br>Website(on Bosnian): <a href="http://www.la-vie.cf/">www.la-vie.cf</a><br>
+	<br>My github: <a href="https://github.com/bajricharun">www.github.com/bajricharun</a>
+    </p>
+    
+  <div style="display:none;" id="contact" class="animate-bottom mySlides">
+    <h2 style='text-align: center;'>Contact</h2>
+    <p>
+    	You can contact me via mail:
+	harunbajric@protonmail.com.
+    </p>
+  </div>
+
+  </div>
+</body>
+</html>
