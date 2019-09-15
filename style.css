@@ -220,7 +220,12 @@ progress{
 		margin-left: 10%;
 		margin-right: 10%;
 	}
-
+	progress{
+		margin-bottom: 4%;
+	}
+	#names{
+		padding: 0 0 0 0;
+	}
 
 
 }
