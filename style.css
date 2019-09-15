@@ -252,7 +252,4 @@ progress{
   		display: block;
   		transition: 0.3s;
 	}
-	.sidebar {
-		width:95%;
-	}
 }
