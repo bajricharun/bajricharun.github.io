@@ -213,7 +213,7 @@ progress{
 
 @media screen and (max-width: 600px) {
 	.openbtn{
-		font-size: 15px;
+		font-size: 20px;
 	}
 	#link-to-contact {
 		margin-top: 5%;
@@ -252,7 +252,7 @@ progress{
   		display: block;
   		transition: 0.3s;
 	}
-
-
-
+	.sidebar {
+		width:95%;
+	}
 }
