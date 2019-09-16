@@ -212,6 +212,9 @@ progress{
 }
 
 @media screen and (max-width: 600px) {
+	body {
+		width:100%;
+	}
 	.openbtn{
 		font-size: 20px;
 	}
@@ -220,10 +223,10 @@ progress{
 		width: 80%;
 		margin-left: 10%;
 		margin-right: 10%;
-		margin-bottom: 10%;
+		margin-bottom: 5%;
 	}
 	progress{
-		margin-top: 2%;
+		margin-top: 2.5%;
 		margin-bottom: 4%;
 	}
 	#names{
@@ -251,5 +254,34 @@ progress{
   		color: white;
   		display: block;
   		transition: 0.3s;
+	}
+	
+	#aboutme {
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+		margin-top: 5%;
+		margin-bottom: 5%;
+		
+	}
+	#portfolio{
+		width: 80%;
+		margin-top: 5%;
+		margin-bottom: 5%;
+		margin-left: 10%;
+		margin-right: 10%;
+	#projects {
+		width: 80%;
+		margin-top: 5%;
+		margin-bottom: 5%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	#contact {
+		margin-top: 5%;
+		margin-bottom: 5%:
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
 	}
 }
